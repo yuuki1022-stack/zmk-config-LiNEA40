@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -112,7 +112,7 @@
             bindings = <
 &kp EXCLAMATION  &kp AT              &kp HASH          &kp DOLLAR    &kp PERCENT                      &kp CARET      &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp LS(LG(S))    &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)                    &kp UNDER      &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ENTER
-&kp LEFT_SHIFT   &kp TAB             &kp ESC           &kp APOS      &kp GRAVE                        &kp SEMICOLON  &kp COLON      &mkp MB4              &kp UP_ARROW           &mkp MB5
+&kp LEFT_SHIFT   &kp TAB             &kp ESC           &kp APOS      &kp GRAVE                        &kp SEMICOLON  &kp COLON      &kp TILDE             &kp UP_ARROW           &kp RIGHT_SHIFT
 &kp LCTRL        &kp LEFT_GUI        &kp LEFT_ALT      &trans        &trans         &trans    &trans  &kp DEL                       &kp LEFT_ARROW        &kp DOWN               &kp RIGHT
             >;
 
@@ -123,10 +123,10 @@
 
         CURSOR {
             bindings = <
-&kp F1          &kp F2        &kp F3        &kp F4   &kp F5                         &kp N7        &kp N8        &kp N9        &kp PLUS      &kp BACKSPACE
-&kp F6          &kp F7        &kp F8        &kp F9   &kp F10                        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &kp ENTER
-&kp LEFT_SHIFT  &kp TAB       &kp ESCAPE    &kp F11  &kp F12                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &trans   &trans   &trans    &kp PERIOD  &kp NUMBER_0                &kp EQUAL     &kp SLASH     &kp RCTRL
+&kp F1          &kp F2        &kp F3        &kp F4   &kp F5                         &kp N7        &kp N8        &kp N9         &kp PLUS      &kp BACKSPACE
+&kp F6          &kp F7        &kp F8        &kp F9   &kp F10                        &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp MINUS     &kp ENTER
+&kp LEFT_SHIFT  &kp TAB       &kp ESCAPE    &kp F11  &kp F12                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp ASTERISK  &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &trans   &trans   &trans    &kp PERIOD  &kp NUMBER_0                &kp BACKSLASH  &kp SLASH     &kp EQUAL
             >;
         };
 
@@ -134,10 +134,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &kp LA(F4)  &trans         &trans          &trans           &trans
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &trans      &trans         &kp C_NEXT      &kp C_PREVIOUS   &trans
-&trans  &trans  &trans  &kp F11  &kp F12                    &kp TAB     &kp RIGHT_ALT  &msc SCRL_UP    &msc SCRL_DOWN   &trans
-&trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans                     &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
+&kp F1          &kp F2        &kp F3        &kp F4   &kp F5                     &kp LA(F4)  &mkp MB3       &msc SCRL_UP    &trans           &kp BACKSPACE
+&kp F6          &kp F7        &kp F8        &kp F9   &kp F10                    &mkp MB4    &mkp MB5       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp ENTER
+&kp LEFT_SHIFT  &kp TAB       &kp ESCAPE    &kp F11  &kp F12                    &kp TAB     &kp RIGHT_ALT  &msc SCRL_DOWN  &kp UP_ARROW     &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &trans   &trans   &trans    &trans  &kp DELETE                 &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
